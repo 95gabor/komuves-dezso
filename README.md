@@ -3,7 +3,6 @@
 Egyoldalas, reszponzív bemutatkozó oldal (landing page) Tóth Dezső EV részére.
 
 **Szolgáltatások:** kőműves munkák · burkolás · térkövezés · szigetelés · kerítésépítés
-**Kapcsolat:** +36 20 464 3790 · tothdedi76@gmail.com
 
 ## Felépítés
 
