@@ -12,7 +12,7 @@ index.html      – az oldal tartalma
 css/style.css   – stílusok, animációk, átmenetek
 js/main.js      – interakciók (menü, görgetési animációk, űrlap)
 favicon.svg     – ikon
-.nojekyll       – GitHub Pages: Jekyll feldolgozás kikapcsolása
+.github/workflows/pages.yml – automatikus kirakás GitHub Pages-re
 ```
 
 Tisztán statikus oldal: nincs build lépés és nincs függőség (a betűtípusok a Google Fontsról töltődnek).
@@ -29,10 +29,12 @@ majd: http://localhost:8000
 
 ## Közzététel GitHub Pages-en
 
-1. A repó **Settings → Pages** oldalán a *Build and deployment* résznél:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`, mappa: `/ (root)`
-2. Mentés után pár perc múlva elérhető: `https://<felhasználónév>.github.io/<repó-neve>/`
+Az oldalt a `.github/workflows/pages.yml` GitHub Actions workflow rakja ki
+minden `main` ágra történő push után (kézzel is indítható az Actions fülön).
+
+Beállítás (egyszer kell): **Settings → Pages → Source: GitHub Actions**.
+
+Cím: https://95gabor.github.io/komuves-dezso/
 
 Saját domainhez a Settings → Pages → *Custom domain* mezőt kell kitölteni.
 
